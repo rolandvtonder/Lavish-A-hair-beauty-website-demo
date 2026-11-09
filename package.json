@@ -1,0 +1,27 @@
+{
+  "name": "lavish-a",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "build:pages": "vite build --base=/Lavish-A-hair-beauty-website-demo/ && vite build --ssr src/entry-server.tsx --outDir dist-ssr --base=/Lavish-A-hair-beauty-website-demo/ && node scripts/prerender.mjs"
+  },
+  "dependencies": {
+    "lenis": "^1.3.11",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3"
+  }
+}
